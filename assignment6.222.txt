@@ -1,0 +1,48 @@
+1. Why MapReduce program is needed in Pig Programming?
+   mapreduce programming is the native language for hadoop so for every pig command that is used to excecute some operation will run java inside them and hence map reduce progamming is highly needed in hadoop the advantage of using pig commands are they are small people with poor knowledge in java and good in sql will work fine in pig and it reduces the complexity of the code 
+
+
+2. What are advantages of Pig over MapReduce?
+ pig will excecute same function what the java does but using either one or two lines while mapreduce will be so complex and there are more lines to be added for excecuting a specific function 
+ the second advantage is that people not good at java can use pig to perform operations in database
+
+3. What is Pig engine and what is its importance?
+  it acts as an interpreter between pig latin scripts and mapreduce program it will create an environment to run pig scripts in a series of mapreduce jobs
+
+4. What are the modes of Pig execution?
+    local mode 
+    mapreduce mode
+
+local mode:
+           in mode all commands are made to run and excecute in the local system rather than in the hadoop file system
+it is used for testing purpose
+
+mapreduce mode:
+              in this mode we will process the data available in hdfs using apache pig while performing pig operations a mapreduce job is being run behind in hadoop
+
+pig excecution mechanism
+            interractive mode:
+                              using run pig latin commands in interactive mode using grunt shell you can perform input and output operations here
+
+	    batch mode: 
+                       you can run pig commands in batch mode by saving the file with .pig extension
+
+            Embedded mode:
+                          apache pig provides an option to define our own functions in programming languages like java and using them in the script where we need those functions
+
+5. What is Grunt Shell in Pig?
+            grunt shell is used to run pig latin scripts in local mode it also provides some set of utility commands such as clear,help,history,quit and set
+
+
+6. What are the features of Pig Latin language?
+   *it is very easy in pig to perform few operations like join,sort an filter
+   *it is very similar to sql people goods at sql will feel pig commands very easy
+   *the program should be sematically correct regarding optimization in pig is that it is done automatically
+   *in pig user defined functions can be developed for reading and writing data
+   * it is used to analyze both structured and unsstructured data
+
+7. Is Pig Latin commands case sensitive?
+   the names of all pig latin keywords are case sensitive while variables relations declared in pig are incase sensitive
+
+8. What is a data flow language? 
+   Pig provides developers many operators which can be applied on data one after another to get final output so a flow of data is maintained a particular sequence is maintained so pig is called as a data flow language.
